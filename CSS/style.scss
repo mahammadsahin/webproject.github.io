@@ -1,0 +1,55 @@
+@import "nav";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    background-color: rgba(255, 253, 242, 0.856);
+    display: grid;
+
+    .header{
+        margin-bottom: 0;
+        padding-bottom: 0;
+        width: 100%;
+        height: 75px;
+        background-color: black;
+        color: white;
+        .left{
+            float: left;
+            img{
+                height: 100%;
+                width: 75px;
+                float: left;
+            }
+            h2{
+                height: 60%;
+                display: flex;
+                margin-left: 50px;
+                align-items: center;
+                font-size: 20px;
+                padding: 7px;
+            }
+            p{
+                margin-left: 50px;
+                display: flex;
+                font-size: 20px;
+                padding: 7px 0;
+            }   
+        }
+        .right{
+            margin: 0;
+            padding: 0;
+            float: right;
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            a{
+                color: white;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
+}
