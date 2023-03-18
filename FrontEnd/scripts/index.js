@@ -20,7 +20,7 @@ async function loginUser(event) {
 
   // 1 -> User is found
   if (foundUser) {
-    window.location.href = '/dashboard.html';
+    window.location.href = 'https://mahammadsahin.github.io/webproject.github.io/FrontEnd/dashboard.html';
     console.log('logged in');
   }
   // 2 -> User is not found
