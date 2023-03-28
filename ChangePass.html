@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Password</title>
+    <!-- font awsame -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+  integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+</style>
+<link rel="stylesheet" href="CSS/Global.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary text-white">
+        <div class="container-fluid">
+          <a class="navbar-brand bg-black p-0 text-white fs-3" href="Index.html">Logo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="nav">
+            <a class="nav-link p-2 text-white" href="Dashboard.html">Deshboard</a>
+          </div>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <form class="d-flex search m-2" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+            <ul class="nav justify-content-end">
+              <li class="nav-item dropdown">
+                <span class="nav-link p-2 text-white dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false" data-toggle="dropdown">
+                  <i class="fas fa-user-circle"></i>
+                  <span id="user_wellcome">Wellcome Sahin</span>
+                </span>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="Profile.html">
+                      <i class="fa fa-fw fa-cog"></i>
+                      Edit Profile
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item active" href="ChangePass.html">
+                      <i class="fa fa-fw far fa-asterisk"></i>
+                      Change Password
+                    </a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="fa fa-fw fa-power-off"></i>
+                      Logout
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container  w-25">
+        <div class="main border border-3 border-dark-subtle m-3 p-3 rounded justify-content-center text-center">
+            <h1 class="text-center">Change Password</h1>
+            <hr>
+            <label for="Current">Current Password</label>
+            <input type="password" name="current" id="current" class="rounded">
+            <label for="New">New Password</label>
+            <input type="password" name="new" id="new" class="rounded">
+            <label for="cnew">Conform Password</label>
+            <input type="password" name="cnew" id="cnew" class="rounded">
+            <input type="submit" value="Update" class="m-3">
+        </div>
+        
+      </div>
+
+      <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+  crossorigin="anonymous"></script>
+</body>
+</html>

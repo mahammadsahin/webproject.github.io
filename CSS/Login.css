@@ -1,0 +1,34 @@
+.login {
+    width: 40rem;
+    border: 8px solid rgb(0, 161, 134);
+    border-radius: 15px;
+}
+
+.btm:hover {
+    background-color: rgb(10, 0, 155);
+}
+
+.btm:active,
+button:active {
+    transform: scale(0.8);
+}
+
+/* .btm{
+    background-color: white;
+    color: black;
+} */
+.account {
+    text-align: center;
+}
+
+.account a {
+    text-decoration: none;
+}
+
+.showpass {
+    cursor: pointer;
+}
+
+/* input:active{
+    border: 2px greenyellow;
+} */

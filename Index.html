@@ -1,13 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bus Travling</title>
-    https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=3.0" />
+  <title>Home</title>
+  <!-- font awsame -->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+  </style>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" href="CSS/Global.css">
+  <link rel="stylesheet" href="CSS/Index.css">
 </head>
+
 <body>
-    https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js
+  <nav class="navbar navbar-expand-lg bg-primary text-white">
+    <div class="container-fluid">
+      <a class="bg-black p-2 text-white fs-1 justify-content-center" id="logo" href="Index.html">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class=" navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active p-2 text-white" aria-current="page" href="Index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 text-white" href="Aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 text-white" href="Contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown float-end">
+            <span class="nav-link p-2 text-white dropdown-toggle" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false" data-toggle="dropdown">
+              <i class="fas fa-user-circle"></i>
+              <span id="user_wellcome">Account</span>
+            </span>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="Registration.html">
+                  <i class="fa fa-fw fas fa-power-off"></i>
+                  Join Here
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+                <a class="dropdown-item" href="Login.html">
+                  <i class="fa fa-fw fa-power-off"></i>
+                  LogIn
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- main -->
+  <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#bs-carousel" data-slide-to="1"></li>
+      <li data-target="#bs-carousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item slides active">
+        <div class="slide-1"></div>
+        <div class="hero">
+          <hgroup>
+            <h1>We are creative</h1>
+            <h3>Get start your next awesome project</h3>
+          </hgroup>
+          <button class="btn btn-hero btn-lg" role="button">See all features</button>
+        </div>
+      </div>
+      <div class="item slides">
+        <div class="slide-2"></div>
+        <div class="hero">
+          <hgroup>
+            <h1>We are smart</h1>
+            <h3>Get start your next awesome project</h3>
+          </hgroup>
+          <button class="btn btn-hero btn-lg" role="button">See all features</button>
+        </div>
+      </div>
+      <div class="item slides">
+        <div class="slide-3"></div>
+        <div class="hero">
+          <hgroup>
+            <h1>We are amazing</h1>
+            <h3>Get start your next awesome project</h3>
+          </hgroup>
+          <button class="btn btn-hero btn-lg" role="button">See all features</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- News -->
+  <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h4>Latest News</h4>
+        <ul class="timeline">
+          <li>
+            <a href="https://www.google.com/">New Web Design</a>
+            <a href="https://www.google.com/" class="float-right">21 March, 2023</a>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, provident!</p>
+          </li>
+          <li>
+            <a href="https://www.google.com/">New Web Design</a>
+            <a href="https://www.google.com/" class="float-right">21 March, 2023</a>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, provident!</p>
+          </li>
+          <li>
+            <a href="https://www.google.com/">New Web Design</a>
+            <a href="https://www.google.com/" class="float-right">21 March, 2023</a>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, provident!</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="container">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Quick links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="Index.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="Aboutus.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+            <li><a href="Help.html"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Quick links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="Index.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="Aboutus.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+            <li><a href="Help.html"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Quick links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="Index.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="Aboutus.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+            <li><a href="Help.html"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="https://www.fb.com"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.google.com"><i class="fa fa-google-plus"></i></a></li>
+          </ul>
+        </div>
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita nesciunt in soluta similique molestiae
+            at voluptates, vel pariatur corrupti. Voluptate.</p>
+          <p class="h6">© All right Reversed.</p>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </section>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </body>
+
 </html>

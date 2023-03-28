@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=3.0" />
+  <title>Add User</title>
+  <!-- font awsame -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+  </style>
+  <link rel="stylesheet" href="CSS/Global.css">
+</head>
+
+<body>
+  <nav class="navbar bg-primary text-white">
+    <div class="container justify-content-start">
+      <a class="navbar-brand bg-black p-2 text-white fs-3" href="Index.html">Logo</a>
+      <a class="navbar-brand p-2 text-white fs-4" href="AddUser.html">Add User</a>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h1 class="text-center alert-sucess">Add User</h1>
+
+    <div class="main row justify-content-center">
+      <form class="row justify-content-center mb-4">
+        <!-- autocomplete="off" -->
+        <div class="col-10 mb-3">
+          <label for="username">User Name</label>
+          <input type="text" class="form-control" id="username" placeholder="Enter user name">
+        </div>
+
+        <div class="col-10 mb-3">
+          <label for="useremail">User Email</label>
+          <input type="text" class="form-control" id="useremail" placeholder="Enter user email">
+        </div>
+
+        <div class="col-10 mb-3">
+          <label for="usermobile">User Mobile</label>
+          <input type="text" class="form-control" id="usermobile" placeholder="Enter user mobile number">
+        </div>
+
+        <div class="col-10">
+          <input type="button" class="btn btn-success add-btn" value="Submit" onclick="manageData()">
+        </div>
+
+      </form>
+      <div id="msg" class="text-center"></div>
+      <div class="col-12 mt-5">
+        <table class="table border rounded">
+          <thead class="bg-primary text-white">
+            <tr>
+              <th>S.No</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Mobile</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody class="list"><!--root-->
+            <tr>
+              <td>1</td>
+              <td>Dear</td>
+              <td>Programmer</td>
+              <td>9999999999</td>
+              <td>
+                <a href="" class="btn btn-warning btn-sm edit">Edit</a>
+                <a href="" class="btn btn-danger btn-sm delete">Delete</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="JS/AddUser.js"></script>
+  <script src="JS/testAddUser.js"></script>
+</body>
+
+</html>
